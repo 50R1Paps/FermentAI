@@ -1,30 +1,48 @@
-# React + TypeScript + Vite
+# Fermentation Data Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React application for tracking and visualizing fermentation data, such as temperature, pH, and humidity. It uses React Bootstrap for the UI and Chart.js for data visualization. The final goal of this tool is to track and enhanche food fermentations.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Input fermentation data through a form.
+- Display the latest entered data.
+- Display historical data using charts.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js (recommended version: 14.x or higher)
+- npm (Node Package Manager)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Installation Steps
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/50R1Paps/FermentAI/
+   cd FermentAI
+   ```
+2. Install dependencies
+
+   ```sh
+   npm install
+   ```
+3. Install React Bootstrap and Chart.js
+   ```sh
+   npm install react-bootstrap bootstrap
+   npm install react-chartjs-2 chart.js
+   ```
+4. Start the application
+   ```sh
+   npm start
+   ```
+
+# Project Structure
+
+- `src/App.tsx`: Main application component.
+- `src/components/DataForm.tsx`: Component for the data input form.
+- `src/components/DataPlot.tsx`: Component for displaying historical data using charts.
+- `src/services/api.ts`: File for backend communication.
+
+   
