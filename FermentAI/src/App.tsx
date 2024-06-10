@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import DataForm from "/Users/gagy/Desktop/fermentai/FermentAI/src/components/DataForm.tsx";
-import DataPlot from "/Users/gagy/Desktop/fermentai/FermentAI/src/components/DataPlot.tsx";
+import DataForm from "/Users/gagy/Desktop/Gagy/fermentai/FermentAI/src/components/DataForm.tsx";
+import DataPlot from "/Users/gagy/Desktop/Gagy/fermentai/FermentAI/src/components/DataPlot.tsx";
 import {
   sendFormData,
   fetchHistoryData,
-} from "/Users/gagy/Desktop/fermentai/FermentAI/src/services/api.ts";
+} from "/Users/gagy/Desktop/Gagy/fermentai/FermentAI/src/services/api.ts";
 import { Container, Row, Col } from "react-bootstrap";
 
 interface FormData {
